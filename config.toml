@@ -1,0 +1,31 @@
+baseURL = "http://hs.atch.xyz/"
+languageCode = "hu-hu"
+title = "Hackerspace Szeged"
+theme = "terminal"
+DefaultContentLanguage = "hu"
+
+[params]
+contentTypeName = "events"
+themeColor = "blue"
+fullWidthTheme = false
+centerTheme = true
+
+[languages]
+  [languages.hu]
+    title = "Hackerspace Szeged"
+    subtitle = ""
+    keywords = ""
+    copyright = ""
+    menuMore = "Show more"
+    readMore = "Tovább"
+    readOtherPosts = "Többi bejegyzés"
+
+    [languages.hu.params.logo]
+      logoText = "HackerspaceSzeged"
+      logoHomeLink = "/"
+
+    [languages.hu.menu]
+      [[languages.hu.menu.main]]
+        identifier = "kapcsolat"
+        name = "Kapcsolat"
+        url = "/kapcsolat"
