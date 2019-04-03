@@ -3,6 +3,7 @@ languageCode = "hu-hu"
 title = "Hackerspace Szeged"
 theme = "terminal"
 DefaultContentLanguage = "hu"
+buildFuture = true
 
 [params]
 themeColor = "blue"
