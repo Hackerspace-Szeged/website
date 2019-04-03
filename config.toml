@@ -1,11 +1,11 @@
-baseURL = "http://hs.atch.xyz/"
+baseURL = "https://hs.atch.xyz/"
 languageCode = "hu-hu"
 title = "Hackerspace Szeged"
 theme = "terminal"
 DefaultContentLanguage = "hu"
+enableGitInfo = true
 
 [params]
-contentTypeName = "events"
 themeColor = "blue"
 fullWidthTheme = false
 centerTheme = true
@@ -15,8 +15,8 @@ centerTheme = true
     title = "Hackerspace Szeged"
     subtitle = ""
     keywords = ""
-    copyright = ""
-    menuMore = "Show more"
+    copyright = "© 2015-2019 Hackerspace Szeged"
+    menuMore = "Többi menüpont"
     readMore = "Tovább"
     readOtherPosts = "Többi bejegyzés"
 
@@ -26,6 +26,22 @@ centerTheme = true
 
     [languages.hu.menu]
       [[languages.hu.menu.main]]
-        identifier = "kapcsolat"
+        identifier = "events"
+        name = "Események"
+        url = "/events"
+        weight = 1
+      [[languages.hu.menu.main]]
+        identifier = "projects"
+        name = "Projektek"
+        url = "/projects"
+        weight = 2
+      [[languages.hu.menu.main]]
+        identifier = "blog"
+        name = "Blog"
+        url = "/posts"
+        weight = 3
+      [[languages.hu.menu.main]]
+        identifier = "contact"
         name = "Kapcsolat"
-        url = "/kapcsolat"
+        url = "/contact"
+        weight = 4

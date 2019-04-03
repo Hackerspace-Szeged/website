@@ -1,0 +1,12 @@
+<header class="header">
+  <div class="hacksense" style="margin-bottom: 10px; text-align:right;"><span style="color:lightgreen;">Hacksense: Jelenleg 3 ember van a spaceben.</span></div>
+  <div class="header__inner">
+    <div class="header__logo">
+      {{ partial "logo.html" . }}
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  {{ if len $.Site.Menus }}
+    {{ partial "menu.html" . }}
+  {{ end }}
+</header>
