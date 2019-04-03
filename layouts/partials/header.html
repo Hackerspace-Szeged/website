@@ -1,5 +1,7 @@
 <header class="header">
-  <div class="hacksense" style="margin-bottom: 10px; text-align:right;"><span style="color:lightgreen;">Hacksense: Jelenleg 3 ember van a spaceben.</span></div>
+  {{ if .Site.Params.HackSenseEnable }}
+  <div style="margin-bottom: 10px; text-align:right;"><a href="/hacksense" style="text-decoration:none;"><span id="hacksense" style=""></span></a></div>
+  {{ end }}
   <div class="header__inner">
     <div class="header__logo">
       {{ partial "logo.html" . }}

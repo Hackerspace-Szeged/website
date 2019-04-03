@@ -3,12 +3,13 @@ languageCode = "hu-hu"
 title = "Hackerspace Szeged"
 theme = "terminal"
 DefaultContentLanguage = "hu"
-enableGitInfo = true
 
 [params]
 themeColor = "blue"
 fullWidthTheme = false
 centerTheme = true
+HackSenseEnable = true
+HackSenseURL = "https://hsapi.atch.xyz"
 
 [languages]
   [languages.hu]

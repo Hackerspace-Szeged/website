@@ -16,6 +16,25 @@
 
 <script src="{{ "assets/main.js" | absURL }}"></script>
 <script src="{{ "assets/prism.js" | absURL }}"></script>
+{{ if .Site.Params.HackSenseEnable }}
+<script>
+function httpGet(theUrl)
+{
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+    xmlHttp.send( null );
+    return xmlHttp.responseText;
+}
+n = parseInt(httpGet("{{ .Site.Params.HackSenseURL }}"));
 
+if (n > 0) {
+document.getElementById("hacksense").style="color:lightgreen;";
+document.getElementById("hacksense").innerHTML = "Hacksense: Jelenleg "+n+" eszköz van a spaceben.";
+} else {
+document.getElementById("hacksense").style="color:red;";
+document.getElementById("hacksense").innerHTML = "Hacksense: Jelenleg nincsen senki a spaceben.";
+}
+</script>
+{{ end }}
 <!-- Extended footer section-->
 {{ partial "extended_footer.html" . }}
