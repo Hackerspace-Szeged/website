@@ -10,6 +10,7 @@ fullWidthTheme = false
 centerTheme = true
 HackSenseEnable = true
 HackSenseURL = "https://hsapi.atch.xyz"
+showGenerationTime = false
 
 [languages]
   [languages.hu]
