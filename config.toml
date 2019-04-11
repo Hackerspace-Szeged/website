@@ -1,6 +1,6 @@
 baseURL = "https://hackerspaceszeged.gitlab.io/"
 languageCode = "hu-hu"
-title = "Hackerspace Szeged"
+title = "HackerSpace Szeged"
 theme = "terminal"
 DefaultContentLanguage = "hu"
 buildFuture = true
@@ -15,7 +15,7 @@ showGenerationTime = false
 
 [languages]
   [languages.hu]
-    title = "Hackerspace Szeged"
+    title = "HackerSpace Szeged"
     subtitle = ""
     keywords = ""
     copyright = "© 2015-2019 Hackerspace Szeged"
@@ -24,27 +24,32 @@ showGenerationTime = false
     readOtherPosts = "Többi bejegyzés"
 
     [languages.hu.params.logo]
-      logoText = "HackerspaceSzeged"
+      logoText = "Hackerpace Szeged"
       logoHomeLink = "/"
 
     [languages.hu.menu]
       [[languages.hu.menu.main]]
+        identifier = "main"
+        name = "Kezdőlap"
+        url = "/"
+        weight = 1
+      [[languages.hu.menu.main]]
         identifier = "events"
         name = "Események"
         url = "/events"
-        weight = 1
+        weight = 3
       [[languages.hu.menu.main]]
         identifier = "projects"
         name = "Projektek"
         url = "/projects"
-        weight = 2
+        weight = 4
       [[languages.hu.menu.main]]
         identifier = "blog"
         name = "Blog"
         url = "/posts"
-        weight = 3
+        weight = 5
       [[languages.hu.menu.main]]
         identifier = "contact"
         name = "Kapcsolat"
         url = "/contact"
-        weight = 4
+        weight = 6
