@@ -1,18 +1,21 @@
 <footer class="footer">
   <div class="footer__inner">
     {{ if $.Site.Copyright }}
-      <div class="copyright copyright--user">{{ $.Site.Copyright | safeHTML }}</div>
+      <div class="copyright copyright--user">
+        <span>{{ $.Site.Copyright | safeHTML }}</span>
+        {{ if .Site.Params.showGenerationTime }}
+          <span>generated at: {{ now.Format "2006-01-02 15:04:05" }}</span>
+        {{ end }}
+        {{ if .GitInfo }}{{ if .Site.Params.showGitVersion }}
+          <span>ver: {{ .GitInfo.AbbreviatedHash }}</span>
+        {{ end }}{{ end }}
+      </div>
     {{else}}
       <div class="copyright">
         <span>© {{ now.Year }} Powered by <a href="http://gohugo.io">Hugo</a></span>
         <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
       </div>
     {{end}}
-    {{ if .Site.Params.showGenerationTime }}
-    <div class="generatetime {{ if $.Site.Copyright }}copyright--user{{end}}">
-      <span>Generated at: {{ now.Format "2006-01-02 15:04:05" }}</span>
-    </div>
-    {{ end }}
   </div>
 </footer>
 
@@ -23,7 +26,7 @@
 function httpGet(theUrl)
 {
     var xmlHttp = new XMLHttpRequest();
-    xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+    xmlHttp.open( "GET", theUrl, false );
     xmlHttp.send( null );
     return xmlHttp.responseText;
 }

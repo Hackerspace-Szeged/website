@@ -4,6 +4,7 @@ title = "HackerSpace Szeged"
 theme = "terminal"
 DefaultContentLanguage = "hu"
 buildFuture = true
+enableGitInfo = true
 
 [params]
 themeColor = "blue"
@@ -12,6 +13,7 @@ centerTheme = true
 HackSenseEnable = true
 HackSenseURL = "https://hsapi.atch.xyz"
 showGenerationTime = false
+showGitVersion = true
 
 [languages]
   [languages.hu]
