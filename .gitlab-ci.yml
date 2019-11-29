@@ -1,19 +1,38 @@
-image: registry.gitlab.com/pages/hugo:latest
+image: docker:latest
+
 
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
 
+services:
+  - docker:dind
+
+
+before_script:
+  - docker login -u $SECRETUSER -p $API $REGISTRY
+  - wget https://github.com/gohugoio/hugo/releases/download/v$HUGO_VERSION/hugo_$HUGO_VERSION_Linux-64bit.tar.gz
+  - tar -xvzf hugo_$HUGO_VERSION_Linux-64bit.tar.gz
+  - mv hugo /bin
+
+stages:
+ - test
+ - pages
+
 test:
-  script:
-  - hugo
-  except:
-  - master
+    stage: test
+    script:
+    - hugo
+    except:
+    - master
 
 pages:
-  script:
-  - hugo
-  artifacts:
-    paths:
-    - public
-  only:
-  - master
+    stage: pages
+    script:
+    - hugo
+    - docker build . -t $REGISTRY/$GROUP/$PROJECT
+    - docker push $REGISTRY/$GROUP/$PROJECT
+    artifacts:
+        paths:
+        - public
+    only:
+    - master
