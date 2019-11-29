@@ -1,3 +1,3 @@
-FROM m4rcu5/lighttpd:latest
+FROM nginx:stable-alpine
 
-COPY ./public /var/www/localhost/htdocs
+COPY ./public /usr/share/nginx/html
