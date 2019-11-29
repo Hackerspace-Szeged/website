@@ -29,8 +29,8 @@ pages:
     stage: pages
     script:
     - hugo
-    - docker build . -t $REGISTRY/$GROUP/$PROJECT
-    - docker push $REGISTRY/$GROUP/$PROJECT
+    - docker build . -t $CI_REGISTRY/$GROUP/$PROJECT
+    - docker push $CI_REGISTRY/$GROUP/$PROJECT
     artifacts:
         paths:
         - public
