@@ -11,7 +11,7 @@ services:
 before_script:
   - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
   - wget "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz"
-  - tar -xvzf -C /bin hugo_${HUGO_VERSION}_Linux-64bit.tar.gz
+  - tar -xvzf hugo_${HUGO_VERSION}_Linux-64bit.tar.gz -C /bin hugo
 
 stages:
  - test
