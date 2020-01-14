@@ -11,7 +11,7 @@ themeColor = "blue"
 fullWidthTheme = false
 centerTheme = true
 HackSenseEnable = true
-HackSenseURL = "https://api.hackerspace-szeged.hu"
+HackSenseURL = "https://api.hackerspace-szeged.org"
 showGenerationTime = false
 showGitVersion = true
 
