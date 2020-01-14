@@ -35,7 +35,7 @@
         xmlHttp.send( null );
         return xmlHttp.responseText;
     }
-    var people = JSON.parse(httpGet("{{ .Site.Params.HackSenseURL }}"));
+    var people = JSON.parse(httpGet("{{ .Site.Params.HackSenseURL }}/list"));
     for (p in people) {
 	    document.getElementById("people").innerHTML += "<li>"+p+": "+people[p]+"</li>";
     }
