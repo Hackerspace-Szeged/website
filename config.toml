@@ -1,4 +1,4 @@
-baseURL = "https://hackerspace-szeged.org/"
+baseURL = "https://www.hackerspace-szeged.org/"
 languageCode = "hu-hu"
 title = "HackerSpace Szeged"
 theme = "terminal"
