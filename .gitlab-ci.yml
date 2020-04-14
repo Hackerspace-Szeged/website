@@ -7,11 +7,6 @@ variables:
 services:
   - docker:dind
 
-before_script:
-  - apk add git
-  - wget "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz"
-  - tar -xvzf hugo_${HUGO_VERSION}_Linux-64bit.tar.gz -C /bin hugo
-
 stages:
  - build
  - deploy
@@ -19,6 +14,9 @@ stages:
 build:
   stage: build
   script:
+    - apk add git
+    - wget "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz"
+    - tar -xvzf hugo_${HUGO_VERSION}_Linux-64bit.tar.gz -C /bin hugo
     - hugo
   artifacts:
     paths:
@@ -27,7 +25,6 @@ build:
 deploy:
   stage: deploy
   script:
-    - ls -la
     - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
     - docker build . -t $CI_REGISTRY_IMAGE
     - docker push $CI_REGISTRY_IMAGE
