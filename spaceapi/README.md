@@ -1,4 +1,4 @@
-# Hacksense backend
+# Spaceapi backend
 
 ### Routeren:
 
@@ -16,7 +16,7 @@ hostapd-utils (https api esetén ssl/tls támogatás)
 
 Futtatása:
 ```
-python3 hacksense-api.py
+python3 spaceapi.py
 ```
 
 Ajánlott reverse proxy mögött futtatni. Konténerben is működik.
