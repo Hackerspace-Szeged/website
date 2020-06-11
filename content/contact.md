@@ -16,3 +16,5 @@ title = "Kapcsolat"
 **Publikus levlista:** https://groups.google.com/forum/?hl=HU#!forum/hackerspace_szeged
 
 **Tagok elérhetősége:** info[kukac]hackerspace-szeged[pont]org
+
+**Chat:** https://discord.gg/Tv9bvY4
