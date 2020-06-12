@@ -15,6 +15,9 @@ HackSenseURL = "https://api.hackerspace-szeged.org"
 showGenerationTime = false
 showGitVersion = true
 
+[markup.goldmark.renderer]
+unsafe = true
+
 [languages]
   [languages.hu]
     title = "HackerSpace Szeged"

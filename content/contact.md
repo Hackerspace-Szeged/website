@@ -8,13 +8,18 @@ title = "Kapcsolat"
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-<i class="fa fa-map-marked-alt" style="font-size:30px">: Szeged, Cserzy Mihály utca 30/B</i>
+<i class="fa fa-map-marked-alt"></i> Szeged, Cserzy Mihály utca 30/B, alagsor
 
-<a href=https://join.skype.com/njgVIxHImwM2><i class="fab fa-skype" style="font-size:40px"></i></a>        <a href=https://www.facebook.com/Hackerspace-Szeged-100898773575308><i class="fab fa-facebook-square" style="font-size:40px"></i></a>       <a href=https://www.meetup.com/Hackerspace-Szeged-workshops-and-meetups><i class="fab fa-meetup" style="font-size:35px"></i> </a>
+<i class="far fa-envelope"></i> info[kukac]hackerspace-szeged[pont]org
 
+<i class="fab fa-facebook-square"></i> [Facebook](https://www.facebook.com/Hackerspace-Szeged-100898773575308)
 
-**Publikus levlista:** https://groups.google.com/forum/?hl=HU#!forum/hackerspace_szeged
+<i class="fab fa-meetup"></i> [Meetup](https://www.meetup.com/Hackerspace-Szeged-workshops-and-meetups)
 
-**Tagok elérhetősége:** info[kukac]hackerspace-szeged[pont]org
+<i class="far fa-envelope"></i> [Levlista](https://groups.google.com/forum/?hl=HU#!forum/hackerspace_szeged)
 
-**Chat:** https://discord.gg/Tv9bvY4
+<i class="fas fa-comments"></i> [Discord](https://discord.gg/Tv9bvY4)
+
+<i class="fas fa-comments"></i> IRC: #hsszeged @ IRCNet
+
+<i class="fas fa-comments"></i> [Telegram](https://t.me/hackerspace_szeged)
