@@ -18,7 +18,7 @@ title = "Kapcsolat"
 
 <i class="fas fa-envelope"></i> [Levlista](https://groups.google.com/forum/?hl=HU#!forum/hackerspace_szeged)
 
-<i class="fas fa-comments"></i> [Discord](https://discord.gg/Tv9bvY4)
+<i class="fas fa-comments"></i> [Discord](https://discord.gg/xtM5wJA)
 
 <i class="fas fa-comments"></i> IRC: #hsszeged @ IRCNet
 
