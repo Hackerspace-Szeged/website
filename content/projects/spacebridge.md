@@ -1,6 +1,6 @@
 +++
 title = "Space-bridge"
-author = D3v
+author = "D3v"
 +++
 
 <center>![blueprint](/img/relay-net.svg)</center>
