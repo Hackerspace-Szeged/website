@@ -6,9 +6,6 @@
         {{ if .Site.Params.showGenerationTime }}
           <span>generated at: {{ now.Format "2006-01-02 15:04:05" }}</span>
         {{ end }}
-        {{ if .GitInfo }}{{ if .Site.Params.showGitVersion }}
-          <span>ver: {{ .GitInfo.AbbreviatedHash }}</span>
-        {{ end }}{{ end }}
       </div>
     {{else}}
       <div class="copyright">
@@ -16,6 +13,11 @@
         <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
       </div>
     {{end}}
+    {{ if .Site.Params.showGitVersion }}
+      <div class="version">
+        <span>ver: {{ substr (readFile ".git/refs/heads/master") 0 7 }}</span>
+      </div>
+    {{ end }}
   </div>
 </footer>
 
