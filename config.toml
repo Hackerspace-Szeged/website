@@ -28,7 +28,7 @@ unsafe = true
     readOtherPosts = "Többi bejegyzés"
 
     [languages.hu.params.logo]
-      logoText = "Hackerpace Szeged"
+      logoText = "HackerSpace Szeged"
       logoHomeLink = "/"
 
     [languages.hu.menu]
