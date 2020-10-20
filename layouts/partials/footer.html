@@ -24,8 +24,7 @@
 <script src="{{ "assets/main.js" | absURL }}"></script>
 <script src="{{ "assets/prism.js" | absURL }}"></script>
 {{ if .Site.Params.HackSenseEnable }}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js" integrity="sha256-bQmrZe4yPnQrLTY+1gYylfNMBuGfnT/HKsCGX+9Xuqo=" crossorigin="anonymous"></script>
-<script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.1/socket.io.js" integrity="sha512-AcZyhRP/tbAEsXCCGlziPun5iFvcSUpEz2jKkx0blkYKbxU81F+iq8FURwPn1sYFeksJ+sDDrI5XujsqSobWdQ==" crossorigin="anonymous"></script>
 var socket = io.connect("{{ .Site.Params.HackSenseURL }}");
 socket.emit("connect");
 socket.on("num", function(data) {
