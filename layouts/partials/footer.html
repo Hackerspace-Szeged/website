@@ -25,6 +25,7 @@
 <script src="{{ "assets/prism.js" | absURL }}"></script>
 {{ if .Site.Params.HackSenseEnable }}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.1/socket.io.js" integrity="sha512-AcZyhRP/tbAEsXCCGlziPun5iFvcSUpEz2jKkx0blkYKbxU81F+iq8FURwPn1sYFeksJ+sDDrI5XujsqSobWdQ==" crossorigin="anonymous"></script>
+<script>
 var socket = io.connect("{{ .Site.Params.HackSenseURL }}");
 socket.emit("connect");
 socket.on("num", function(data) {
