@@ -39,6 +39,18 @@ socket.on("num", function(data) {
     }
 });
 </script>
+{{ if eq .Page.File.BaseFileName "hacksense" }}
+<script>
+socket.emit("getClients");
+socket.on("clients", function(data) {
+    var people = JSON.parse(data);
+    document.getElementById("people").innerHTML = ""
+    for (p in people) {
+        document.getElementById("people").innerHTML += "<li>"+p+": "+people[p]+"</li>";
+    }
+});
+</script>
+{{ end }}
 {{ end }}
 <!-- Extended footer section-->
 {{ partial "extended_footer.html" . }}

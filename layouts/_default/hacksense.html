@@ -27,19 +27,6 @@
     {{ if .Site.Params.HackSenseEnable }}
     <ul id="people">
     </ul>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.4/socket.io.js" integrity="sha512-aMGMvNYu8Ue4G+fHa359jcPb1u+ytAF+P2SCb+PxrjCdO3n3ZTxJ30zuH39rimUggmTwmh2u7wvQsDTHESnmfQ==" crossorigin="anonymous"></script>
-    <script>
-    var socket = io.connect("{{ .Site.Params.HackSenseURL }}");
-    socket.emit("getClients");
-	socket.on("clients", function(data) {
-		console.log(data);
-		var people = JSON.parse(data);
-		document.getElementById("people").innerHTML = ""
-		for (p in people) {
-			document.getElementById("people").innerHTML += "<li>"+p+": "+people[p]+"</li>";
-		}
-	});
-    </script>
     {{ else }}
     <h1>A Hacksense le van tiltva.</h1>
     {{ end }}
