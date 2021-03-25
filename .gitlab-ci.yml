@@ -2,7 +2,7 @@ image: docker:latest
 
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
-  HUGO_VERSION: 0.80.0
+  HUGO_VERSION: 0.82.0
 
 services:
   - docker:dind
