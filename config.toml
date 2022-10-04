@@ -1,6 +1,6 @@
-baseURL = "https://www.hackerspace-szeged.org/"
+baseURL = "https://szeged.hacker-space.hu/"
 languageCode = "hu-hu"
-title = "HackerSpace Szeged"
+title = "Hackerspace Szeged"
 theme = "terminal"
 DefaultContentLanguage = "hu"
 buildFuture = true
@@ -9,8 +9,8 @@ buildFuture = true
 themeColor = "blue"
 fullWidthTheme = false
 centerTheme = true
-HackSenseEnable = true
-HackSenseURL = "https://api.hackerspace-szeged.org"
+HackSenseEnable = false
+HackSenseURL = "https://api.szeged.hacker-space.org"
 showGenerationTime = false
 showGitVersion = true
 
@@ -19,7 +19,7 @@ unsafe = true
 
 [languages]
   [languages.hu]
-    title = "HackerSpace Szeged"
+    title = "Hackerspace Szeged"
     subtitle = ""
     keywords = ""
     copyright = "© 2015-2022 Hackerspace Szeged"
@@ -28,7 +28,7 @@ unsafe = true
     readOtherPosts = "Többi bejegyzés"
 
     [languages.hu.params.logo]
-      logoText = "HackerSpace Szeged"
+      logoText = "Hackerspace Szeged"
       logoHomeLink = "/"
 
     [languages.hu.menu]
