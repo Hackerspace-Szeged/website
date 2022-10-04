@@ -14,6 +14,10 @@ HackSenseURL = "https://api.szeged.hacker-space.org"
 showGenerationTime = false
 showGitVersion = true
 
+[security]
+  [security.funcs]
+    getenv = ['GITHUB_HEAD_REF']
+
 [markup.goldmark.renderer]
 unsafe = true
 
