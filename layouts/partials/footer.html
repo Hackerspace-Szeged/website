@@ -16,7 +16,7 @@
     {{ if .Site.Params.showGitVersion }}
       <div class="version">
         <span>
-	  <a href="https://github.com/Hackerspace-Szeged/website">ver: {{ os.Getenv "COMMIT_SHA" }}</a>
+	  <a href="https://github.com/Hackerspace-Szeged/website/tree/{{ os.Getenv "COMMIT_SHA"}}">commit: {{ os.Getenv "COMMIT_SHA" }}</a>
 	</span>
       </div>
     {{ end }}
