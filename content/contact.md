@@ -11,13 +11,11 @@ title = "Kapcsolat"
 
 <i class="fas fa-map-marked-alt"></i> Szeged, Cserzy Mihály utca 30/B, alagsor
 
-<i class="fas fa-envelope"></i> info[kukac]hackerspace-szeged[pont]org
+<i class="fas fa-envelope"></i> info[kukac]szeged[pont]hacker-space[pont]hu
 
 <i class="fab fa-facebook-square"></i> [Facebook](https://www.facebook.com/Hackerspace-Szeged-100898773575308)
 
 <i class="fab fa-meetup"></i> [Meetup](https://www.meetup.com/Hackerspace-Szeged-workshops-and-meetups)
-
-<i class="fas fa-envelope"></i> [Levlista](https://groups.google.com/forum/?hl=HU#!forum/hackerspace_szeged)
 
 <i class="fas fa-comments"></i> [Discord](https://discord.gg/xtM5wJA)
 
