@@ -2,18 +2,35 @@
   "api": "0.13",
   "space": "Hackerspace Szeged",
   "logo": "https://scontent.fbud5-1.fna.fbcdn.net/v/t1.0-9/12046910_191999674465217_569496067820227551_n.png?_nc_cat=100&_nc_sid=85a577&_nc_ohc=ik2Y_6YKj4YAX-AoR4F&_nc_ht=scontent.fbud5-1.fna&oh=b0a8fedabcdbe8d6c51227817d08c0f5&oe=5EBAAE14",
-  "url": "https://hackerspace-szeged.org",
+  "url": "https://szeged.hacker-space.hu/",
   "location": {
     "address": "Cserzy Mihály u. 30/B. basement, 6724 Szeged, Hungary",
     "lat": 46.260209,
-    "lon": 20.130756
+    "lon": 20.130756,
+    "timezone": "Europe/Budapest"
   },
   "contact": {
-    "email": "info@hackerspace-szeged.org",
+    "discord": "https://discord.gg/xtM5wJA",
+    "email": "info@szeged.hacker-space.hu",
     "facebook": "https://www.facebook.com/Hackerspace-Szeged-100898773575308/",
-    "mattermost": "https://chat.hackerspace-szeged.org/",
-    "discord": "https://discord.gg/6PeW5dr"
+    "irc": "irc://ircnet.com/#hsszeged",
+    "matrix": "#hackerspace_szeged:matrix.org",
+    "telegram": "https://t.me/hackerspace_szeged"
   },
+  "feeds": {
+    "blog": {
+      "type": "atom",
+      "url": "https://szeged.hacker-space.hu/posts/index.xml"
+    },
+    "calendar": {
+      "type": "atom",
+      "url": "https://szeged.hacker-space.hu/events/index.xml"
+    }
+  },
+  "projects": [
+    "https://szeged.hacker-space.hu/projects/",
+    "https://github.com/Hackerspace-Szeged/"
+  ],
   "issue_report_channels": [
     "email"
   ],
