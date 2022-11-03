@@ -43,11 +43,17 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v2
+      
+      - name: Set outputs
+        id: vars
+        run: echo "::set-output name=sha_short::$(git rev-parse --short HEAD)"
+
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
+          COMMIT_SHA: ${{ steps.vars.outputs.sha_short }}
         run: |
           hugo \
             --minify \

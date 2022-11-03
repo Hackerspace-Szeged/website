@@ -15,7 +15,9 @@
     {{end}}
     {{ if .Site.Params.showGitVersion }}
       <div class="version">
-        <span>ver: {{ getenv "GITHUB_HEAD_REF" }}</span>
+        <span>
+	  <a href="https://github.com/Hackerspace-Szeged/website">ver: {{ os.Getenv "COMMIT_SHA" }}</a>
+	</span>
       </div>
     {{ end }}
   </div>

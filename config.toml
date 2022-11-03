@@ -16,7 +16,7 @@ showGitVersion = true
 
 [security]
   [security.funcs]
-    getenv = ['GITHUB_HEAD_REF']
+    getenv = ['COMMIT_SHA']
 
 [markup.goldmark.renderer]
 unsafe = true
